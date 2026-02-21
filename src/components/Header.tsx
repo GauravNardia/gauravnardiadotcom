@@ -5,7 +5,7 @@ import Moon from '../imports/Moon';
 import Sun from '../imports/Sun';
 
 interface HeaderProps {
-  activePage?: 'writing' | 'favorites' | 'photography';
+  activePage?: 'writing' | 'work' | 'experience';
 }
 
 export function Header({ activePage }: HeaderProps = {}) {
@@ -17,22 +17,22 @@ export function Header({ activePage }: HeaderProps = {}) {
       <Link to="/" className="content-stretch flex h-10 items-center justify-start relative shrink-0 w-full" aria-label="Go to home">
         <div className="relative rounded-full shrink-0 size-10">
           <img
-            alt="Akash Bhadange profile picture"
+            alt="Gaurav Nardia profile picture"
             className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none rounded-full size-full"
-            src="/assets/profile.png"
+            src="/assets/profile.jpeg"
             loading="eager"
           />
         </div>
       </Link>
 
       {/* Name */}
-      <Link to="/" className="content-stretch flex gap-1 h-[25px] items-center justify-start relative shrink-0 w-full hover:opacity-70 transition-opacity" aria-label="Akash Bhadange home">
+      <Link to="/" className="content-stretch flex gap-1 h-[25px] items-center justify-start relative shrink-0 w-full hover:opacity-70 transition-opacity" aria-label="Gaurav Nardia home">
         <p className="font-medium leading-[1.4] not-italic relative shrink-0 text-[var(--foreground)] text-xl text-justify text-nowrap whitespace-pre">
-          <span className="font-medium">Akash Bhadange </span>
+          <span className="font-medium">Gaurav Nardia </span>
           <span className="font-normal italic">aka</span>
-          <span className="font-medium"> @designerdada</span>
+          <span className="font-medium"> @gaurav_nardia</span>
         </p>
-      </Link>
+      </Link> 
 
       {/* Navigation */}
       <nav className="content-stretch flex gap-4 items-center relative shrink-0 w-full" aria-label="Main navigation">
@@ -46,15 +46,25 @@ export function Header({ activePage }: HeaderProps = {}) {
           Writing
         </Link>
         <Link
-          to="/favorites"
+          to="/experience"
           className={`font-normal leading-[1.4] not-italic relative shrink-0 text-base text-justify text-nowrap whitespace-pre hover:underline underline-offset-4 transition-all ${
-            activePage === 'favorites' ? 'text-[var(--foreground)] underline decoration-[var(--muted)]' : 'text-gray-500 hover:text-[var(--foreground)]'
+            activePage === 'experience' ? 'text-[var(--foreground)] underline decoration-[var(--muted)]' : 'text-gray-500 hover:text-[var(--foreground)]'
           }`}
-          aria-current={activePage === 'favorites' ? 'page' : undefined}
+          aria-current={activePage === 'experience' ? 'page' : undefined}
         >
-          Favorites
+          Experience
         </Link>
         <Link
+          to="/work"
+          className={`font-normal leading-[1.4] not-italic relative shrink-0 text-base text-justify text-nowrap whitespace-pre hover:underline underline-offset-4 transition-all ${
+            activePage === 'work' ? 'text-[var(--foreground)] underline decoration-[var(--muted)]' : 'text-gray-500 hover:text-[var(--foreground)]'
+          }`}
+          aria-current={activePage === 'work' ? 'page' : undefined}
+        >   
+          Work
+        </Link>
+
+        {/* <Link
           to="/photography"
           className={`font-normal leading-[1.4] not-italic relative shrink-0 text-base text-justify text-nowrap whitespace-pre hover:underline underline-offset-4 transition-all ${
             activePage === 'photography' ? 'text-[var(--foreground)] underline decoration-[var(--muted)]' : 'text-gray-500 hover:text-[var(--foreground)]'
@@ -62,7 +72,7 @@ export function Header({ activePage }: HeaderProps = {}) {
           aria-current={activePage === 'photography' ? 'page' : undefined}
         >
           Photography
-        </Link>
+        </Link> */}
         <Tooltip content={theme === 'dark' ? 'Delight' : 'Go Dark'} className="ml-auto">
           <button
             onClick={toggleTheme}

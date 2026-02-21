@@ -1,14 +1,14 @@
-# designerdada.com
+# gauravnardia.com
 
-Product designer, founder, and photographer. Building Peerlist and AutoSend.
+Full Stack Developer. Building cool stuffs with code.
 
-> https://designerdada.com
+> https://gauravnardia.com
 
 ---
 
 ## About
 
-I'm Akash Bhadange (@designerdada), Product designer and founder building Peerlist and AutoSend. Over the past 15 years, I've focused on designing beautiful software that people love to use.
+I'm Gaurav Nardia (@gaurav_nardia), Full Stack Developer. Building cool stuffs with code.
 
 I write about design, building products, and the startup journey. When not designing, I shoot street photography on film.
 
@@ -16,17 +16,103 @@ I write about design, building products, and the startup journey. When not desig
 
 ## Navigation
 
-- Home: https://designerdada.com
-- Writing: https://designerdada.com/writing
-- Favorites: https://designerdada.com/favorites
+- Home: https://gauravnardia.com
+- Writing: https://gauravnardia.com/writing
+- Favorites: https://gauravnardia.com/favorites
 
 ---
 
 ## Articles
 
+### Building Before You Feel Ready
+
+URL: https://gauravnardia.com/writing/building-before-you-feel-ready
+Published: 21.Feb.2026
+Description: Why shipping imperfect projects taught me more than planning ever did.
+
+Most of the projects I’ve built didn’t start with confidence. They started with curiosity.
+
+Trybit wasn’t built because I knew it would work. It was built because I wanted to see if I could design a real-time challenge system from scratch.
+
+The HTTP Protocol project wasn’t built for production. It was built because I wanted to understand what actually happens under the hood when we type `https://`.
+
+I’ve learned something important:
+
+> You don’t become ready and then build.  
+> You build, and that’s how you become ready.
+
+## Shipping > Perfect Planning
+
+For a long time, I believed I needed to:
+- Know system design deeply  
+- Master every edge case  
+- Write “perfect” architecture  
+
+Before shipping anything.
+
+But every meaningful improvement in my skill came from:
+
+- Breaking my own production code  
+- Fixing performance issues at 2AM  
+- Debugging real authentication bugs  
+- Handling actual users, not test data  
+
+There’s no substitute for real friction.
+
+
+## What Shipping Taught Me
+
+### 1. Systems Thinking
+
+Building full-stack forces you to think in flows:
+
+User → API → Database → Response → UI → State
+
+Once you’ve wired everything end-to-end, abstractions start making sense.
+
+### 2. Ownership Changes Everything
+
+When you deploy something publicly, responsibility shifts.
+
+You’re no longer coding for fun.  
+You’re building for someone who might rely on it.
+
+That mindset alone improves quality.
+
+### 3. Momentum Beats Motivation
+
+Motivation fades.  
+Momentum compounds.
+
+Small features shipped consistently > One “perfect” release that never happens.
+
+## The Real Skill
+
+The real skill isn’t knowing every framework.
+
+It’s being comfortable:
+
+- Starting messy  
+- Iterating fast  
+- Improving what exists  
+- Shipping anyway  
+
+That’s what helped me move from learning tutorials to building SaaS products.
+
+And that’s what I’m continuing to optimize for.
+
+---
+
+If you’re waiting to feel ready,  
+you probably already are.
+
+Start building.
+
+---
+
 ### Buy a Domain
 
-URL: https://designerdada.com/writing/buy-a-domain
+URL: https://gauravnardia.com/writing/buy-a-domain
 Published: 02.Dec.2025
 Description: The first thing you should do when starting a project is buy a domain. Not set up your tech stack. Not design your logo. Buy a domain. Here's why.
 
@@ -60,7 +146,7 @@ The domain comes first. Everything else follows.
 
 ### Design Is The Moat
 
-URL: https://designerdada.com/writing/design-is-the-moat
+URL: https://gauravnardia.com/writing/design-is-the-moat
 Published: 15.Nov.2025
 Description: Design is no longer a layer you add at the end. It is the product. And it's the moat that will matter most.
 
@@ -86,7 +172,7 @@ The future belongs to those who can ship, but more importantly, to those who can
 
 ### Growth Without Hacks
 
-URL: https://designerdada.com/writing/growth-without-hacks
+URL: https://gauravnardia.com/writing/growth-without-hacks
 Published: 05.Nov.2025
 Description: What really drives startup growth. Marketing isn't about shiny tools or growth hacks. It's about understanding people, solving their problems, and showing up consistently.
 
@@ -176,7 +262,7 @@ Highly recommend to read Paul Graham's [Startups in 13 Sentences](https://www.pa
 
 ### Make Something YOU Want
 
-URL: https://designerdada.com/writing/make-something-you-want
+URL: https://gauravnardia.com/writing/make-something-you-want
 Published: 01.Nov.2025
 Description: The best products come from personal frustration. When you build something you actually need, you understand the problem deeply, you know what's missing, and you have the motivation to make it great.
 
@@ -208,7 +294,7 @@ Lastly - Here's Jack Dorsey on why building something for yourself can be better
 
 ### Stop Writing Fictional Case Studies
 
-URL: https://designerdada.com/writing/stop-fictional-case-studies
+URL: https://gauravnardia.com/writing/stop-fictional-case-studies
 Published: 26.Nov.2025
 Description: Dear product designers, stop writing fictional case studies and start collaborating with developers on side projects to build credible proof-of-work.
 
@@ -258,7 +344,7 @@ If you have read till here, I have 2 asks from you —
 
 ### Trying to Be Human
 
-URL: https://designerdada.com/writing/trying-to-be-human
+URL: https://gauravnardia.com/writing/trying-to-be-human
 Published: 07.Dec.2025
 Description: Why human creation will matter more, not less, in an age of infinite AI-generated content.
 
@@ -300,7 +386,7 @@ Making choices that require my judgment. Creating things that couldn't exist wit
 
 ## Contact
 
-Email: akash@peerlist.io
-Peerlist: https://peerlist.io/designerdada
-X (Twitter): https://x.com/designerdada
-Instagram: https://instagram.com/designerdada
+Email: gauravnardia07@gmail.com
+Peerlist: undefined
+X (Twitter): https://x.com/gaurav_nardia
+Instagram: undefined

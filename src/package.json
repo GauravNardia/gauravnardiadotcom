@@ -16,7 +16,7 @@
     "preview": "vite preview"
   },
   "description": "Personal website with MDX-powered blog",
-  "author": "Akash Bhadange",
+  "author": "Gaurav Nardia",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

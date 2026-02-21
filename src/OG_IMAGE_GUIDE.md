@@ -8,9 +8,9 @@ This guide shows you exactly where to update all og:image URLs in your personal 
 **Lines:** 27 & 35
 
 ```typescript
-<meta property="og:image" content="https://designerdada.com/media/og-images/og-home.jpg" />
+<meta property="og:image" content="https://gauravnardia.com/media/og-images/og-home.jpg" />
 ...
-<meta name="twitter:image" content="https://designerdada.com/media/og-images/og-home.jpg" />
+<meta name="twitter:image" content="https://gauravnardia.com/media/og-images/og-home.jpg" />
 ```
 
 **Purpose:** Image shown when home page is shared on social media
@@ -21,9 +21,9 @@ This guide shows you exactly where to update all og:image URLs in your personal 
 **Lines:** 92 & 98
 
 ```typescript
-<meta property="og:image" content="https://designerdada.com/media/og-images/og-writing.jpg" />
+<meta property="og:image" content="https://gauravnardia.com/media/og-images/og-writing.jpg" />
 ...
-<meta name="twitter:image" content="https://designerdada.com/media/og-images/og-writing.jpg" />
+<meta name="twitter:image" content="https://gauravnardia.com/media/og-images/og-writing.jpg" />
 ```
 
 **Purpose:** Image shown when writing index page is shared on social media
@@ -34,9 +34,9 @@ This guide shows you exactly where to update all og:image URLs in your personal 
 **Lines:** 271 & 277
 
 ```typescript
-<meta property="og:image" content="https://designerdada.com/media/og-images/og-favorites.jpg" />
+<meta property="og:image" content="https://gauravnardia.com/media/og-images/og-favorites.jpg" />
 ...
-<meta name="twitter:image" content="https://designerdada.com/media/og-images/og-favorites.jpg" />
+<meta name="twitter:image" content="https://gauravnardia.com/media/og-images/og-favorites.jpg" />
 ```
 
 **Purpose:** Image shown when favorites page is shared on social media
@@ -55,8 +55,8 @@ export const articleContents: Record<string, ArticleData> = {
       description: '...',
       publishDate: '15.Nov.2025',
       modifiedDate: '15.Nov.2025',
-      author: 'Akash Bhadange',
-      ogImage: 'https://designerdada.com/media/og-images/design-is-the-moat.jpg', // ← Update this
+      author: 'Gaurav Nardia',
+      ogImage: 'https://gauravnardia.com/media/og-images/design-is-the-moat.jpg', // ← Update this
       keywords: 'design, product design, AI, prototyping, startups'
     },
     content: `...`
@@ -64,7 +64,7 @@ export const articleContents: Record<string, ArticleData> = {
   'getting-started': {
     metadata: {
       // ...other fields
-      ogImage: 'https://designerdada.com/media/og-images/getting-started.jpg', // ← Update this
+      ogImage: 'https://gauravnardia.com/media/og-images/getting-started.jpg', // ← Update this
       // ...
     }
   }
@@ -78,7 +78,7 @@ export const articleContents: Record<string, ArticleData> = {
 **Line:** 159
 
 ```typescript
-const ogImage = articleData.metadata.ogImage || 'https://designerdada.com/media/og-images/og-default.jpg';
+const ogImage = articleData.metadata.ogImage || 'https://gauravnardia.com/media/og-images/og-default.jpg';
 ```
 
 **Purpose:** Default image used when an article doesn't have a specific `ogImage` defined
@@ -171,7 +171,7 @@ Upload your og:images to `/public/media/og-images/` and they'll automatically wo
 
 ## 🎯 Quick Replace Checklist
 
-Before deploying, update these URLs from `designerdada.com` to your domain:
+Before deploying, update these URLs from `gauravnardia.com` to your domain:
 
 - [ ] `/App.tsx` - Lines 27, 35 (Home page og:image)
 - [ ] `/pages/Writing.tsx` - Lines 92, 98 (Writing page og:image)

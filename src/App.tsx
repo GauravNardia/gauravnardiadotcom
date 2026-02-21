@@ -2,48 +2,48 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Writing } from "./pages/Writing";
 import { WritingDetail } from "./pages/WritingDetail";
-import { Favorites } from "./pages/Favorites";
-import { Photography } from "./pages/Photography";
 import { AdminPhotos } from "./pages/AdminPhotos";
 import { Helmet } from "react-helmet";
 import { Analytics } from "@vercel/analytics/react";
+import { Experience } from "./pages/Experience";
+import { Work } from "./pages/Work";
 
 export default function App() {
 	return (
 		<Router>
 			<Helmet>
-				<title>Akash Bhadange aka @designerdada</title>
+				<title>Gaurav Nardia aka @gaurav_nardia</title>
 				<meta
 					name='description'
-					content='Product designer, founder, and photographer based in San Francisco. Currently building Peerlist and AutoSend.'
+					content='Full Stack Developer. Building cool stuffs with code.'
 				/>
-				<meta name='author' content='Akash Bhadange' />
+				<meta name='author' content='Gaurav Nardia' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<html lang='en' />
 
 				{/* Open Graph / Social Media */}
 				<meta property='og:type' content='website' />
-				<meta property='og:title' content='Akash Bhadange aka @designerdada' />
+				<meta property='og:title' content='Gaurav Nardia aka @gaurav_nardia' />
 				<meta
 					property='og:description'
-					content='Product designer, founder, and photographer based in San Francisco. Currently building Peerlist and AutoSend.'
+					content='Full Stack Developer. Building cool stuffs with code.'
 				/>
-				<meta property='og:site_name' content='designerdada.com' />
-				<meta property='og:url' content='https://designerdada.com' />
-				<meta property='og:image' content='https://designerdada.com/assets/og-images/og-home.jpg' />
+				<meta property='og:site_name' content='gauravnardia.com' />
+				<meta property='og:url' content='https://gauravnardia.com' />
+				<meta property='og:image' content='https://gauravnardia.com/assets/og-images/og-home.jpg' />
 
 				{/* Twitter */}
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:creator' content='@designerdada' />
-				<meta name='twitter:site' content='@designerdada' />
-				<meta name='twitter:title' content='Akash Bhadange aka @designerdada' />
+				<meta name='twitter:creator' content='@gaurav_nardia' />
+				<meta name='twitter:site' content='@gaurav_nardia' />
+				<meta name='twitter:title' content='Gaurav Nardia aka @gaurav_nardia' />
 				<meta
 					name='twitter:description'
-					content='Product designer, founder, and photographer based in San Francisco. Currently building Peerlist and AutoSend.'
+					content='Full Stack Developer. Building cool stuffs with code.'
 				/>
 				<meta
 					name='twitter:image'
-					content='https://designerdada.com/assets/og-images/og-home.jpg'
+					content='https://gauravnardia.com/assets/og-images/og-home.jpg'
 				/>
 
 				{/* Theme color */}
@@ -57,35 +57,29 @@ export default function App() {
 						"@graph": [
 							{
 								"@type": "Person",
-								"@id": "https://designerdada.com/#person",
-								name: "Akash Bhadange",
-								alternateName: "@designerdada",
-								url: "https://designerdada.com",
-								image: "https://designerdada.com/profile-image.jpg",
-								jobTitle: "Product Designer & Founder",
+								"@id": "https://gauravnardia.com/#person",
+								name: "Gaurav Nardia",
+								alternateName: "@gaurav_nardia",
+								url: "https://gauravnardia.com",
+								image: "https://gauravnardia.com/profile.jpeg",
+								jobTitle: "Full Stack Developer",
 								description:
-									"Product designer, founder, and photographer based in San Francisco. Currently building Peerlist and AutoSend.",
-								address: {
-									"@type": "PostalAddress",
-									addressLocality: "San Francisco",
-									addressRegion: "CA",
-									addressCountry: "US",
-								},
+									"Full Stack Developer. Building cool stuffs with code.",	
 								sameAs: [
-									"https://x.com/designerdada",
-									"https://peerlist.io/designerdada",
-									"https://instagram.com/retrolens.me",
+									"https://x.com/gaurav_nardia",
+									"https://www.linkedin.com/in/gauravnardia",
+									"https://github.com/GauravNardia",
 								],
 							},
 							{
 								"@type": "WebSite",
-								"@id": "https://designerdada.com/#website",
-								url: "https://designerdada.com",
-								name: "Akash Bhadange - @designerdada",
+								"@id": "https://gauravnardia.com/#website",
+								url: "https://gauravnardia.com",
+								name: "Gaurav Nardia - @gaurav_nardia",
 								description:
-									"Product designer, founder, and photographer based in San Francisco. Currently building Peerlist and AutoSend.",
+									"Full Stack Developer. Building cool stuffs with code.",
 								publisher: {
-									"@id": "https://designerdada.com/#person",
+									"@id": "https://gauravnardia.com/#person",
 								},
 								inLanguage: "en-US",
 							},
@@ -98,8 +92,8 @@ export default function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/writing' element={<Writing />} />
 				<Route path='/writing/:id' element={<WritingDetail />} />
-				<Route path='/favorites' element={<Favorites />} />
-				<Route path='/photography' element={<Photography />} />
+				<Route path='/experience' element={<Experience />} />
+				<Route path='/work' element={<Work />} />
 				<Route path='/admin/photos' element={<AdminPhotos />} />
 			</Routes>
 			<Analytics />

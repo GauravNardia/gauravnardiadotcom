@@ -21,36 +21,36 @@ export function Photography() {
 	return (
 		<>
 			<Helmet>
-				<title>Photography | Akash Bhadange</title>
+				<title>Photography | Gaurav Nardia</title>
 				<meta
 					name='description'
-					content='Photography by Akash Bhadange. A collection of moments captured through my lens.'
+					content='Photography by Gaurav Nardia. A collection of moments captured through my lens.'
 				/>
-				<link rel='canonical' href='https://designerdada.com/photography' />
+				<link rel='canonical' href='https://gauravnardia.com/photography' />
 
 				{/* Open Graph */}
 				<meta property='og:type' content='website' />
-				<meta property='og:title' content='Photography | Akash Bhadange' />
+				<meta property='og:title' content='Photography | Gaurav Nardia' />
 				<meta
 					property='og:description'
-					content='Photography by Akash Bhadange. A collection of moments captured through my lens.'
+					content='Photography by Gaurav Nardia. A collection of moments captured through my lens.'
 				/>
-				<meta property='og:url' content='https://designerdada.com/photography' />
+				<meta property='og:url' content='https://gauravnardia.com/photography' />
 				<meta
 					property='og:image'
-					content='https://designerdada.com/assets/og-images/og-photography.jpg'
+					content='https://gauravnardia.com/assets/og-images/og-photography.jpg'
 				/>
 
 				{/* Twitter */}
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:title' content='Photography | Akash Bhadange' />
+				<meta name='twitter:title' content='Photography | Gaurav Nardia' />
 				<meta
 					name='twitter:description'
-					content='Photography by Akash Bhadange. A collection of moments captured through my lens.'
+					content='Photography by Gaurav Nardia. A collection of moments captured through my lens.'
 				/>
 				<meta
 					name='twitter:image'
-					content='https://designerdada.com/assets/og-images/og-photography.jpg'
+					content='https://gauravnardia.com/assets/og-images/og-photography.jpg'
 				/>
 			</Helmet>
 			<div className='bg-[var(--background)] relative size-full min-h-screen flex flex-col items-center'>

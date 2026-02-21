@@ -45,7 +45,7 @@
 ## 📋 Pre-Deployment Tasks
 
 ### Configuration
-- [ ] Update all URLs from `designerdada.com` to your actual domain
+- [ ] Update all URLs from `gauravnardia.com` to your actual domain
 - [ ] Replace placeholder og:image URLs with actual image URLs (see `/OG_IMAGE_GUIDE.md`)
 - [ ] Configure newsletter subscription endpoint (MailingList component)
 - [ ] Set up analytics (Google Analytics, Plausible, etc.)

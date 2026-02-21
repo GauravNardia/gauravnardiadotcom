@@ -1,6 +1,6 @@
 # Personal Website Template
 
-A minimal, SEO-optimized personal website built with React, TypeScript, Vite, and Tailwind CSS. Originally created by [Akash Bhadange](https://designerdada.com).
+A minimal, SEO-optimized personal website built with React, TypeScript, Vite, and Tailwind CSS. Originally created by [Gaurav Nardia](https://gauravnardia.com).
 
 ## Features
 
@@ -48,7 +48,7 @@ Edit `src/scripts/site-config.js` with the same information (used by build scrip
 
 #### Required: Personal Content
 
-1. Replace `public/assets/profile.png` with your profile photo
+1. Replace `public/assets/profile.jpeg` with your profile photo
 2. Replace `public/assets/footer-signature.png` with your signature/logo
 3. Update `public/assets/og-images/` with your Open Graph images
 4. Update `src/pages/Home.tsx` with your bio text
@@ -57,10 +57,10 @@ Edit `src/scripts/site-config.js` with the same information (used by build scrip
 #### Required: Meta Tags
 
 Search and replace these values across the codebase:
-- `designerdada.com` → your domain
-- `Akash Bhadange` → your name
-- `@designerdada` → your handle
-- `akash@peerlist.io` → your email
+- `gauravnardia.com` → your domain
+- `Gaurav Nardia` → your name
+- `@gaurav_nardia` → your handle
+- `gauravnardia07@gmail.com` → your email
 
 Files to update:
 - `src/App.tsx` (JSON-LD and meta tags)
@@ -179,4 +179,4 @@ Open source - feel free to use as a template for your own site!
 
 ## Credits
 
-Originally built by [Akash Bhadange](https://designerdada.com) ([@designerdada](https://x.com/designerdada))
+Originally built by [Gaurav Nardia](https://gauravnardia.com) ([@gaurav_nardia](https://x.com/designerdada))

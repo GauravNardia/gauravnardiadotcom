@@ -2,9 +2,9 @@ export function Footer() {
   return (
     <div className="content-stretch flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
       {/* Logo Image */}
-      <div className="h-6 relative shrink-0 w-[91px]">
+      <div className="h-10 relative shrink-0 w-[150px]">
         <img
-          alt="designerdada.com"
+          alt="gauravnardia.com"
           className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
           src="/assets/footer-signature.png"
         />

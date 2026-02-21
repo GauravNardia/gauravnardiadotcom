@@ -47,30 +47,30 @@ export function Writing() {
   return (
     <>
       <Helmet>
-        <title>Writing | Akash Bhadange</title>
-        <meta name="description" content="Raw thoughts on design, building products, and the startup journey by Akash Bhadange." />
-        <link rel="canonical" href="https://designerdada.com/writing" />
+        <title>Writing | Gaurav Nardia</title>
+        <meta name="description" content="Raw thoughts on design, building products, and the startup journey by Gaurav Nardia." />
+        <link rel="canonical" href="https://gauravnardia.com/writing" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Writing | Akash Bhadange" />
-        <meta property="og:description" content="Raw thoughts on design, building products, and the startup journey by Akash Bhadange." />
-        <meta property="og:url" content="https://designerdada.com/writing" />
-        <meta property="og:image" content="https://designerdada.com/assets/og-images/og-writing.jpg" />
+        <meta property="og:title" content="Writing | Gaurav Nardia" />
+        <meta property="og:description" content="Raw thoughts on design, building products, and the startup journey by Gaurav Nardia." />
+        <meta property="og:url" content="https://gauravnardia.com/writing" />
+        <meta property="og:image" content="https://gauravnardia.com/assets/og-images/og-writing.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Writing | Akash Bhadange" />
-        <meta name="twitter:description" content="Raw thoughts on design, building products, and the startup journey by Akash Bhadange." />
-        <meta name="twitter:image" content="https://designerdada.com/assets/og-images/og-writing.jpg" />
+        <meta name="twitter:title" content="Writing | Gaurav Nardia" />
+        <meta name="twitter:description" content="Raw thoughts on building products, and the startup journey by Gaurav Nardia." />
+        <meta name="twitter:image" content="https://gauravnardia.com/assets/og-images/og-writing.jpg" />
       </Helmet>
-      <div className="bg-[var(--background)] relative size-full min-h-screen" data-name="designerdada.com/writing">
+      <div className="bg-[var(--background)] relative size-full min-h-screen" data-name="gauravnardia.com/writing">
         <div className="box-border content-stretch flex flex-col gap-[40px] items-center mx-auto px-[16px] py-[40px] w-full max-w-[544px]">
           <div className="animate-in w-full">
             <Header activePage="writing" />
           </div>
           <p className="leading-[1.4] not-italic relative shrink-0 text-[var(--foreground)] text-lg text-justify w-full animate-in animate-delay-1">
-            I write whenever inspiration strikes, which means I'm pretty irregular about it. These are my raw thoughts on design, building products, and the startup journey. Some are polished, others are more stream-of-consciousness, but they all capture what I was thinking about at the time.
+          I write about tech, products, startups, and the lessons I pick up along the way. Sometimes it's code. Sometimes it's product thinking. Sometimes it's just something I observed about builders, growth, or life. These posts are snapshots of what I'm learning in real time.
           </p>
           <div className="animate-in animate-delay-2 w-full">
             <ArticleList />

@@ -2,12 +2,100 @@
 // Do not edit manually - your changes will be overwritten!
 // To add a new article, create a .mdx file in /content/writing/ and run: npm run generate-mdx
 
+export const buildingBeforeYouFeelReady = `---
+title: Building Before You Feel Ready
+description: Why shipping imperfect projects taught me more than planning ever did.
+publishDate: 21.Feb.2026
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/building-before-ready.jpg
+keywords: building in public, shipping fast, indie hacking, full stack developer
+---
+
+
+Most of the projects I’ve built didn’t start with confidence. They started with curiosity.
+
+Trybit wasn’t built because I knew it would work. It was built because I wanted to see if I could design a real-time challenge system from scratch.
+
+The HTTP Protocol project wasn’t built for production. It was built because I wanted to understand what actually happens under the hood when we type \`https://\`.
+
+I’ve learned something important:
+
+> You don’t become ready and then build.  
+> You build, and that’s how you become ready.
+
+## Shipping > Perfect Planning
+
+For a long time, I believed I needed to:
+- Know system design deeply  
+- Master every edge case  
+- Write “perfect” architecture  
+
+Before shipping anything.
+
+But every meaningful improvement in my skill came from:
+
+- Breaking my own production code  
+- Fixing performance issues at 2AM  
+- Debugging real authentication bugs  
+- Handling actual users, not test data  
+
+There’s no substitute for real friction.
+
+
+## What Shipping Taught Me
+
+### 1. Systems Thinking
+
+Building full-stack forces you to think in flows:
+
+User → API → Database → Response → UI → State
+
+Once you’ve wired everything end-to-end, abstractions start making sense.
+
+### 2. Ownership Changes Everything
+
+When you deploy something publicly, responsibility shifts.
+
+You’re no longer coding for fun.  
+You’re building for someone who might rely on it.
+
+That mindset alone improves quality.
+
+### 3. Momentum Beats Motivation
+
+Motivation fades.  
+Momentum compounds.
+
+Small features shipped consistently > One “perfect” release that never happens.
+
+## The Real Skill
+
+The real skill isn’t knowing every framework.
+
+It’s being comfortable:
+
+- Starting messy  
+- Iterating fast  
+- Improving what exists  
+- Shipping anyway  
+
+That’s what helped me move from learning tutorials to building SaaS products.
+
+And that’s what I’m continuing to optimize for.
+
+---
+
+If you’re waiting to feel ready,  
+you probably already are.
+
+Start building.`;
+
 export const buyADomain = `---
 title: Buy a Domain
 description: The first thing you should do when starting a project is buy a domain. Not set up your tech stack. Not design your logo. Buy a domain. Here's why.
 publishDate: 02.Dec.2025
-author: Akash Bhadange
-ogImage: https://designerdada.com/assets/og-images/buy-a-domain.jpg
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/buy-a-domain.jpg
 keywords: domain, buy domain, starting a project, web development, entrepreneurship
 ---
 
@@ -43,8 +131,8 @@ title: Design Is The Moat
 description: Design is no longer a layer you add at the end. It is the product. And it's the moat that will matter most.
 publishDate: 15.Nov.2025
 modifiedDate: 26.Nov.2025
-author: Akash Bhadange
-ogImage: https://designerdada.com/assets/og-images/design-is-the-moat.jpg
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/design-is-the-moat.jpg
 keywords: design, product design, AI, prototyping, startups
 ---
 
@@ -72,8 +160,8 @@ title: Growth Without Hacks
 description: What really drives startup growth. Marketing isn't about shiny tools or growth hacks. It's about understanding people, solving their problems, and showing up consistently.
 publishDate: 05.Nov.2025
 modifiedDate: 26.Nov.2025
-author: Akash Bhadange
-ogImage: https://designerdada.com/assets/og-images/growth-without-hacks.jpg
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/growth-without-hacks.jpg
 keywords: growth, marketing, startups, product development
 ---
 
@@ -165,8 +253,8 @@ title: Make Something YOU Want
 description: The best products come from personal frustration. When you build something you actually need, you understand the problem deeply, you know what's missing, and you have the motivation to make it great.
 publishDate: 01.Nov.2025
 modifiedDate: 26.Nov.2025
-author: Akash Bhadange
-ogImage: https://designerdada.com/assets/og-images/make-something-you-want.jpg
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/make-something-you-want.jpg
 keywords: product development, startups, entrepreneurship, design
 ---
 
@@ -199,8 +287,8 @@ export const stopFictionalCaseStudies = `---
 title: Stop Writing Fictional Case Studies
 description: Dear product designers, stop writing fictional case studies and start collaborating with developers on side projects to build credible proof-of-work.
 publishDate: 26.Nov.2025
-author: Akash Bhadange
-ogImage: https://designerdada.com/assets/og-images/stop-fictional-case-studies.jpg
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/stop-fictional-case-studies.jpg
 keywords: product design, portfolio, case studies, collaboration, career advice
 ---
 I have been noticing a growing trend in designers spending a lot of time working on fictional case studies. Where they come up with an imaginary solution, for some imaginary problem. It's useless, mostly!
@@ -250,8 +338,8 @@ export const tryingToBeHuman = `---
 title: Trying to Be Human
 description: Why human creation will matter more, not less, in an age of infinite AI-generated content.
 publishDate: 07.Dec.2025
-author: Akash Bhadange
-ogImage: https://designerdada.com/assets/og-images/trying-to-be-human.jpg
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/trying-to-be-human.jpg
 keywords: AI, creativity, human creation, photography, analog, authenticity, artificial intelligence, digital age
 ---
 
@@ -292,6 +380,7 @@ Making choices that require my judgment. Creating things that couldn't exist wit
 
 // Map of all articles
 export const allMDXContent: Record<string, string> = {
+  'building-before-you-feel-ready': buildingBeforeYouFeelReady,
   'buy-a-domain': buyADomain,
   'design-is-the-moat': designIsTheMoat,
   'growth-without-hacks': growthWithoutHacks,

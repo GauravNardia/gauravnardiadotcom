@@ -14,7 +14,7 @@ bucket_name = "designerdada-photos"
 [vars]
 # Comma-separated list of allowed CORS origins
 # Includes production domains (www and non-www) plus localhost for development
-CORS_ORIGIN = "https://www.designerdada.com,https://designerdada.com,http://localhost:3000"
+CORS_ORIGIN = "https://www.gauravnardia.com,https://gauravnardia.com,http://localhost:3000"
 # Cloudflare Images configuration (semi-public - account hash is visible in image URLs)
 CF_ACCOUNT_ID = "15da6c62f90a8eb014de5f9ff3918ea0"
 CF_IMAGES_ACCOUNT_HASH = "SwqrinvM3qHSiSLb7f3jXg"

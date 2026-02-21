@@ -24,14 +24,14 @@ When someone forks this repo, they need to customize these files:
 - `src/scripts/site-config.js` - Same config for build scripts
 
 ### Personal Content
-- `public/assets/profile.png` - Profile photo
+- `public/assets/profile.jpeg` - Profile photo
 - `public/assets/footer-signature.png` - Footer signature/logo
 - `public/assets/og-images/` - Open Graph images
 - `src/pages/Home.tsx` - Bio text
 - `src/components/Header.tsx` - Name display
 
 ### Files with Hardcoded URLs (need search/replace)
-Search and replace `designerdada.com` with their domain in:
+Search and replace `gauravnardia.com` with their domain in:
 - `src/App.tsx` (JSON-LD, meta tags)
 - `src/pages/*.tsx` (page meta tags)
 - `src/scripts/generate-prerender.js`

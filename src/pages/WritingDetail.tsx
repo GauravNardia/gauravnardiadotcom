@@ -113,8 +113,8 @@ function Footer() {
 
   return (
     <div className="content-stretch flex flex-col gap-4 items-center justify-center relative shrink-0 w-full">
-      <div className="h-6 relative shrink-0 w-[91px]">
-        <img alt="designerdada.com" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="/assets/footer-signature.png" />
+      <div className="h-10 relative shrink-0 w-[150px]">
+        <img alt="gauravnardia.com" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="/assets/footer-signature.png" />
       </div>
       <div className="content-stretch flex gap-4 items-center relative shrink-0">
         <Link
@@ -124,10 +124,16 @@ function Footer() {
           Writing
         </Link>
         <Link
-          to="/favorites"
+          to="/experience"
           className="font-normal leading-[1.4] not-italic relative shrink-0 text-gray-500 hover:text-[var(--foreground)] text-base text-justify text-nowrap whitespace-pre hover:underline underline-offset-4 transition-all"
         >
-          Favorites
+          Experience
+        </Link>
+        <Link
+          to="/work"
+          className="font-normal leading-[1.4] not-italic relative shrink-0 text-gray-500 hover:text-[var(--foreground)] text-base text-justify text-nowrap whitespace-pre hover:underline underline-offset-4 transition-all"
+        >
+          Work
         </Link>
         <Tooltip content={theme === 'dark' ? 'Delight' : 'Go Dark'}>
           <button
@@ -185,8 +191,8 @@ export function WritingDetail() {
   }
 
   const articleData = articleContents[id];
-  const canonicalUrl = `https://designerdada.com/writing/${id}`;
-  const ogImage = articleData.metadata.ogImage || 'https://designerdada.com/media/og-images/og-default.jpg';
+  const canonicalUrl = `https://gauravnardia.com/writing/${id}`;
+  const ogImage = articleData.metadata.ogImage || 'https://gauravnardia.com/media/og-images/og-default.jpg';
   const publishDate = articleData.metadata.publishDate;
   const modifiedDate = articleData.metadata.modifiedDate || publishDate;
 
@@ -204,13 +210,13 @@ export function WritingDetail() {
     "dateModified": modifiedDate,
     "author": {
       "@type": "Person",
-      "name": articleData.metadata.author || "Akash Bhadange",
-      "url": "https://designerdada.com"
+      "name": articleData.metadata.author || "Gaurav Nardia",
+      "url": "https://gauravnardia.com"
     },
     "publisher": {
       "@type": "Person",
-      "name": "Akash Bhadange",
-      "url": "https://designerdada.com"
+      "name": "Gaurav Nardia",
+      "url": "https://gauravnardia.com"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -222,9 +228,9 @@ export function WritingDetail() {
   return (
     <>
       <Helmet>
-        <title>{articleData.metadata.title} | Akash Bhadange</title>
+        <title>{articleData.metadata.title} | Gaurav Nardia</title>
         <meta name="description" content={articleData.metadata.description} />
-        <meta name="author" content={articleData.metadata.author || 'Akash Bhadange'} />
+        <meta name="author" content={articleData.metadata.author || 'Gaurav Nardia'} />
         {articleData.metadata.keywords && <meta name="keywords" content={articleData.metadata.keywords} />}
         <link rel="canonical" href={canonicalUrl} />
         
@@ -233,13 +239,13 @@ export function WritingDetail() {
         <meta property="og:title" content={articleData.metadata.title} />
         <meta property="og:description" content={articleData.metadata.description} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:site_name" content="Akash Bhadange" />
+        <meta property="og:site_name" content="Gaurav Nardia" />
         <meta property="og:image" content={ogImage} />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@designerdada" />
-        <meta name="twitter:creator" content="@designerdada" />
+        <meta name="twitter:site" content="@gaurav_nardia" />
+        <meta name="twitter:creator" content="@gaurav_nardia" />
         <meta name="twitter:title" content={articleData.metadata.title} />
         <meta name="twitter:description" content={articleData.metadata.description} />
         <meta name="twitter:image" content={ogImage} />
@@ -247,7 +253,7 @@ export function WritingDetail() {
         {/* Article specific */}
         <meta property="article:published_time" content={publishDate} />
         <meta property="article:modified_time" content={modifiedDate} />
-        <meta property="article:author" content={articleData.metadata.author || 'Akash Bhadange'} />
+        <meta property="article:author" content={articleData.metadata.author || 'Gaurav Nardia'} />
         
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">
@@ -265,12 +271,12 @@ export function WritingDetail() {
                     <Link to="/" className="flex gap-2 items-center">
                       <div className="relative rounded-full shrink-0 size-6">
                         <img
-                          alt="Akash Bhadange"
+                          alt="Gaurav Nardia"
                           className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none rounded-full size-full"
-                          src="/assets/profile.png"
+                          src="/assets/profile.jpeg"
                         />
                       </div>
-                      <span className="leading-[1.4] text-base">Akash Bhadange</span>
+                      <span className="leading-[1.4] text-base">Gaurav Nardia</span>
                     </Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>

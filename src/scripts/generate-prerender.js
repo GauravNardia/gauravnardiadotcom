@@ -116,13 +116,13 @@ function injectMetaTags(html, metadata, articleContent = null) {
       "dateModified": metadata.modifiedDate || metadata.publishDate,
       "author": {
         "@type": "Person",
-        "name": metadata.author || "Akash Bhadange",
-        "url": "https://designerdada.com"
+        "name": metadata.author || "Gaurav Nardia",
+        "url": "https://gauravnardia.com"
       },
       "publisher": {
         "@type": "Person",
-        "name": "Akash Bhadange",
-        "url": "https://designerdada.com"
+        "name": "Gaurav Nardia",
+        "url": "https://gauravnardia.com"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -145,7 +145,7 @@ function injectMetaTags(html, metadata, articleContent = null) {
         <article style="max-width: 65ch; margin: 0 auto; padding: 2rem; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; color: #333;">
           <header>
             <h1 style="font-size: 2rem; font-weight: 600; margin-bottom: 0.5rem;">${metadata.title}</h1>
-            <p style="color: #666; font-size: 0.9rem;">By ${metadata.author || 'Akash Bhadange'} • ${metadata.publishDate}</p>
+            <p style="color: #666; font-size: 0.9rem;">By ${metadata.author || 'Gaurav Nardia'} • ${metadata.publishDate}</p>
           </header>
           <main style="margin-top: 2rem;">
             ${htmlContent}
@@ -183,12 +183,12 @@ function prerenderArticles() {
       const metadata = {
         title: frontmatter.title,
         description: frontmatter.description,
-        author: frontmatter.author || 'Akash Bhadange',
+        author: frontmatter.author || 'Gaurav Nardia',
         publishDate: frontmatter.publishDate,
         modifiedDate: frontmatter.modifiedDate,
         keywords: frontmatter.keywords,
-        ogImage: frontmatter.ogImage || 'https://designerdada.com/assets/og-images/og-default.jpg',
-        canonicalUrl: `https://designerdada.com/writing/${articleId}`
+        ogImage: frontmatter.ogImage || 'https://gauravnardia.com/assets/og-images/og-default.jpg',
+        canonicalUrl: `https://gauravnardia.com/writing/${articleId}`
       };
 
       // Generate HTML with injected meta tags and article content
@@ -218,27 +218,27 @@ function prerenderStaticPages() {
   const pages = [
     {
       path: '',
-      title: 'Akash Bhadange',
-      description: 'Product designer, founder, and builder. Currently building Peerlist.',
-      ogImage: 'https://designerdada.com/assets/og-images/og-default.jpg'
+      title: 'Gaurav Nardia',
+      description: 'Full Stack Developer. Building cool stuffs with code.',
+      ogImage: 'https://gauravnardia.com/assets/og-images/og-default.jpg'
     },
     {
       path: 'writing',
-      title: 'Writing | Akash Bhadange',
+          title: 'Writing | Gaurav Nardia',
       description: 'Thoughts on design, products, and building things that matter.',
-      ogImage: 'https://designerdada.com/assets/og-images/og-writing.jpg'
+      ogImage: 'https://gauravnardia.com/assets/og-images/og-writing.jpg'
     },
     {
       path: 'favorites',
-      title: 'Favorites | Akash Bhadange',
+      title: 'Favorites | Gaurav Nardia',
       description: 'A curated collection of beautifully designed products, inspiring people, and websites that have caught my attention.',
-      ogImage: 'https://designerdada.com/assets/og-images/og-favorites.jpg'
+      ogImage: 'https://gauravnardia.com/assets/og-images/og-favorites.jpg'
     },
     {
       path: 'photography',
-      title: 'Photography | Akash Bhadange',
+      title: 'Photography | Gaurav Nardia',
       description: 'A collection of photographs capturing moments and perspectives.',
-      ogImage: 'https://designerdada.com/assets/og-images/og-default.jpg'
+      ogImage: 'https://gauravnardia.com/assets/og-images/og-default.jpg'
     }
   ];
 
@@ -258,12 +258,12 @@ function prerenderStaticPages() {
 
       // Add canonical and Open Graph tags with data-react-helmet to prevent duplicates
       $('head').append(`
-        <link rel="canonical" href="https://designerdada.com/${page.path}" data-react-helmet="true" />
+        <link rel="canonical" href="https://gauravnardia.com/${page.path}" data-react-helmet="true" />
 
         <meta property="og:type" content="website" data-react-helmet="true" />
         <meta property="og:title" content="${page.title}" data-react-helmet="true" />
         <meta property="og:description" content="${page.description}" data-react-helmet="true" />
-        <meta property="og:url" content="https://designerdada.com/${page.path}" data-react-helmet="true" />
+        <meta property="og:url" content="https://gauravnardia.com/${page.path}" data-react-helmet="true" />
         <meta property="og:image" content="${page.ogImage}" data-react-helmet="true" />
 
         <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />

@@ -24,7 +24,7 @@ const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
 // Transform each photo's URLs
 data.photos = data.photos.map(photo => {
   // Extract the original path from any of the URLs
-  // Current format: https://cdn.designerdada.com/photos/{id}/original.jpg
+  // Current format: https://cdn.gauravnardia.com/photos/{id}/original.jpg
   const urlMatch = photo.urls.thumbnail.match(/\/photos\/([^/]+)\/original\.(\w+)$/);
 
   if (!urlMatch) {

@@ -15,7 +15,7 @@ export function Footer() {
         <p className="basis-0 font-normal grow leading-[1.4] min-h-px min-w-px not-italic relative shrink-0 text-sm text-center text-[var(--muted)]">
           This site template is open sourced and available on{' '}
           <a
-            href="https://github.com/designerdada/Designerdadacom"
+            href="https://github.com/GauravNardia/gauravnardiadotcom"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium hover:text-[var(--foreground)] transition-colors"

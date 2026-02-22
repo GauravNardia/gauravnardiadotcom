@@ -320,9 +320,6 @@ export function WritingDetail() {
           <div className={`${animateClass('animate-delay-4')} w-full`}>
             <ReadMore currentSlug={id} />
           </div>
-          <div className={`${animateClass('animate-delay-5')} w-full`}>
-            <ColorDots />
-          </div>
           {/* <MailingList /> */}
           {/* <ColorDots /> */}
           <div className={`${animateClass('animate-delay-6')} w-full`}>

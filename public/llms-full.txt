@@ -292,6 +292,44 @@ Lastly - Here's Jack Dorsey on why building something for yourself can be better
 
 ---
 
+### Reverse Engineering
+
+URL: https://gauravnardia.com/writing/reverse-engineering
+Published: 022.Feb.2026
+Description: Reverse engineering is not a hacker trick. It is the oldest and most honest way to understand how the world actually works.
+
+There's a skill that almost nobody talks about in school, that the best hackers quietly consider one of the most important things you can learn. It's called reverse engineering. And once you understand what it really is, you'll realize it's not just a technical skill. It's a way of thinking.
+
+**The simplest definition:** reverse engineering is figuring out how something works by taking it apart, rather than building it from scratch.
+
+But that definition hides something interesting. When you reverse engineer something, you're not just learning what it does. You're learning why it was built the way it was. You're reading someone else's mind, someone who made a thousand decisions you never saw, and left traces of those decisions in the thing they built.
+
+That's a very different kind of learning than reading a textbook.
+
+Let's say you want to learn how a lock works. You could read a manual. Or you could pick one open yourself, feeling every pin click into place, understanding through your hands what diagrams could never quite teach you.
+
+That's **reverse engineering**. And the person who picked the lock understands it in a way the person who read the manual simply doesn't.
+
+Most people assume reverse engineering is something shady. It's not.
+
+What I think is the most interesting thing about reverse engineering is it forces you to think about design in a way that building from scratch doesn't.
+
+When you build something, you make decisions in a comfortable order. You start with a plan. You know your own assumptions. When you reverse engineer something, you inherit someone else's decisions without inheriting their reasoning. You have to reconstruct both.
+
+This is humbling in a useful way. You realize how much of software design is invisible to the user. The choices that seem obvious in hindsight were hard-fought at the time. Every clever hack leaves a scar. Every shortcut compounds.
+
+A person who has reverse engineered a lot of software develops an almost uncanny ability to read code they've never seen before. They know the patterns. They know what shortcuts look like. They know what code written under deadline pressure looks like versus code written by someone who had time to think.
+
+**Reverse engineers** don't accept black boxes. They believe that everything made by humans can, in principle, be understood by humans. That there's no magic, just decisions made by other people, which can be reconstructed. That's a healthy way to think about the world.
+
+The people who reverse engineer things, really reverse engineer them. They're not satisfied with "it works." They want to know why it works. And they're willing to do the hard, slow, unglamorous work of finding out.
+
+> The people who built it had answers. Reverse engineering is how you find the questions they never wrote down.
+
+It makes you better at everything.
+
+---
+
 ### Stop Writing Fictional Case Studies
 
 URL: https://gauravnardia.com/writing/stop-fictional-case-studies

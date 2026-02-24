@@ -28,20 +28,20 @@ const experiences: ExperienceItem[] = [
   },
   {
     id: 2,
-    company: "Nimbus.storage",
-    role: "Open Source Contributor",
-    duration: "May 2025 - August 2025",
-    description:
-      "Developed a OneDrive provider SDK using Microsoft Graph API with full CRUD operations. Enabled account linking in BetterAuth. Improved type safety, test coverage using Jest, and overall codebase organization.",
-    category: "Open Source",
-  },
-  {
-    id: 3,
     company: "Klavish AI",
     role: "Open Source Contributor",
     duration: "August 2025 - October 2025",
     description:
       "Built a Spotify MCP server end-to-end, enabling music control via LLMs. Worked on backend logic, API integrations, and system architecture focused on scalability and clean structure.",
+    category: "Open Source",
+  },
+  {
+    id: 3,
+    company: "Nimbus.storage",
+    role: "Open Source Contributor",
+    duration: "May 2025 - August 2025",
+    description:
+      "Developed a OneDrive provider SDK using Microsoft Graph API with full CRUD operations. Enabled account linking in BetterAuth. Improved type safety, test coverage using Jest, and overall codebase organization.",
     category: "Open Source",
   },
 ];

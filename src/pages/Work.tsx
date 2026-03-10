@@ -21,6 +21,14 @@ interface Favorite {
 }
 
 const favorites: Favorite[] = [
+    {
+    id: 0,
+    name: "Puffin Analytics",
+    description:
+      "Simple, privacy-first web analytics built for developers and founders. No cookies. No tracking creepiness. Just fast, reliable insights.",
+    url: "https://www.puffinanalytics.com",
+    category: "Product",
+  },
   {
     id: 1,
     name: "Trybit",

@@ -5,6 +5,11 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+    {
+    id: 'i-built-my-own-analytics-tool',
+    title: 'I Built My Own Analytics Tool. Here is How and Why.',
+    date: '13.Mar.2026'
+  },
   {
     id: 'reverse-engineering',
     title: 'Reverse Engineering',

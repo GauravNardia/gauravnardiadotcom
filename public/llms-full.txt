@@ -447,6 +447,51 @@ If you have read till here, I have 2 asks from you —
 
 ---
 
+### System Design For Beginners
+
+URL: https://gauravnardia.com/writing/system-design-beginners
+Published: 14.Mar.2026
+Description: System design and all the system design components for beginners.
+
+Recently I started learning about system design. I thought it would be helpful to write blogs as I learn, so that in the future I can quickly revisit the concepts instead of going through everything from scratch again. So I'm writing this blog.
+
+As a developer we usually focus on writing code , but rarely think about how a system handles thousands of million of users. System design is basically about building software that can scale, that can keep running smoothly even when a lot of people use them.
+
+When we open a website, the browser sends a request to the server, and the server sends back a response to us.
+
+If too many users send requests to a single server, then the server won't be able to handle the load and the server can crash. That's why we don't keep our software on a single server. We increase the number of servers.
+
+**But then a second problem arises:** we have more than one server (many servers), but when a user sends a request, how do we decide which server we should send this request to?
+
+This is where **Load Balancer** comes into the picture. A load balancer decides which server the request should be sent to. It sends the requests in a way that no single server becomes overloaded. In amazon/aws world this load balancer is called **ELB**(Elastic load balancer).
+
+Now in **Microservice Architecture** we have many services like auth service, payment service, order service, etc. And each service has many servers as shown in the diagram:
+![Diagram 1](/assets/systemdesignbeginners1.png)
+
+So now I want when a requests goes to **/auth**, **/payment**, **/order** it must route to the auth service server, payment service server, and order service server respectively. But each service has many servers, so how do we manage it?
+
+For resolving this, we add a load balancer for each service that handles the load for each service's servers.
+
+Now we had 3 services and let's say we added 3 load balancers (one for each service). I want a host router that routes the requests to the respective load balancers. That host router is called API Gateway. It decides which service we should send a request to. It's a centralized entry point for API calls that acts as a reverse proxy that routes requests from the client to the backend service and back.
+![Diagram 2](/assets/systemdesignbeginners2.png)
+
+Now let's say a user pays and a payment service has to send the email of payment successful email to the user. **One way of doing this:** the user pays and the payment service triggers the email service (or we can say email worker). The email worker interacts with Gmail or any email provider and then sends the email to the user. After sending the email, the email worker tells the payment service that I have sent the email.
+
+In this approach, the payment service has to wait because it takes time to send the email while interacting with third-party libraries. This is a synchronous approach. The payment service has to wait for 1 to 2 seconds to get the response from the email worker, and this is a synchronous way. In the case of a million users, we cannot hang the payment service on wait. Instead of a synchronous approach, we have to use the asynchronous approach.
+
+**In asynchronous approach:** When user pays, payment service put the order in **queue(in aws this queue service is SQS - simple queue system)** and email worker pull events from queue and send the email and then it pulls next event and send email. And when email worker becomes overloaded, we can also scale it horizontally and increase the parallelism. 
+![Diagram 3](/assets/systemdesignbeginners3.png)
+
+But when we wanna send email, whatsapp message, sms on payment then we can use **PUB/SUB(one publisher and many subscribers can pull from it)** mechanism in AWS is called **SNS(simple notification system)**, when user pays payment service event to SNS and email, whatsapp, sms can pool from SNS. But in PUB/SUB there's no acknowledgement, when request fails of send notifications, we cant cope up with it. To prevent it, we use **Fan Out Mechanism.** In this SNS send events to queue and servers listen from queues. If some events fails we can put in queue and retry it.
+
+ELB's also can be problematic thing, so for this, we use CDNs(in aws cloufront ) before LB's. These CDNs deploy machines in every region, it makes req-res so fast because whenever user send request, it goes to their nearest CDN and also caches the stuff and return it so fast.
+
+These are some of the basic building blocks of system design. Things like load balancers, API gateways, queues, pub/sub, and CDNs help systems handle large numbers of users without breaking.
+
+I'm still learning system design, and this blog is just my way of documenting what I learn. In future blogs, I'll try to go deeper into other system design concepts.
+
+---
+
 ### Trying to Be Human
 
 URL: https://gauravnardia.com/writing/trying-to-be-human

@@ -5,6 +5,11 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {
+    id: 'system-design-for-beginners',
+    title: 'System Design For Beginners',
+    date: '14.Mar.2026'
+  },
     {
     id: 'i-built-my-own-analytics-tool',
     title: 'I Built My Own Analytics Tool. Here is How and Why.',

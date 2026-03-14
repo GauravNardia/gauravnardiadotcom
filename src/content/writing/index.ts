@@ -441,7 +441,7 @@ If you have read till here, I have 2 asks from you —
 - Also read [portfolio advice](https://hvpandya.com/portfolio-advice?ref=designgiri.com) by [Hardik Pandya](https://peerlist.io/hardikpandya?ref=designgiri.com). It's a good one.
 `;
 
-export const systemDesignBeginners = `---
+export const systemDesignForBeginners = `---
 title: System Design For Beginners
 description: System design and all the system design components for beginners.
 publishDate: 14.Mar.2026 
@@ -541,6 +541,6 @@ export const allMDXContent: Record<string, string> = {
   'make-something-you-want': makeSomethingYouWant,
   'reverse-engineering': reverseEngineering,
   'stop-fictional-case-studies': stopFictionalCaseStudies,
-  'system-design-beginners': systemDesignBeginners,
+  'system-design-for-beginners': systemDesignForBeginners,
   'trying-to-be-human': tryingToBeHuman,
 };

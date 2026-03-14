@@ -449,7 +449,7 @@ If you have read till here, I have 2 asks from you —
 
 ### System Design For Beginners
 
-URL: https://gauravnardia.com/writing/system-design-beginners
+URL: https://gauravnardia.com/writing/system-design-for-beginners
 Published: 14.Mar.2026
 Description: System design and all the system design components for beginners.
 

@@ -59,6 +59,14 @@ export function Home() {
 		         <span>
 			         I've worked on products like{" "}
 		         </span>
+				 	<a
+			         href='https://puffinanalytics.com'
+			         target='_blank'
+			         rel='noopener noreferrer'
+			         className='underline underline-offset-4 hover:opacity-80 transition'>
+			         Puffin Analytics
+		         </a>
+				 <span>,{" "}</span>
 		         <a
 			         href='https://trybit.in'
 			         target='_blank'

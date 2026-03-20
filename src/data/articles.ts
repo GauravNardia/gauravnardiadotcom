@@ -5,7 +5,12 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-    {
+  {
+    id: 'deploy-frontend-on-aws',
+    title: 'Deploy Frontend on AWS',
+    date: '20.Mar.2026'
+  },
+  {
     id: 'rate-limiting',
     title: 'Rate Limiting',
     date: '17.Mar.2026'

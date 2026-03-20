@@ -126,6 +126,49 @@ Good projects start with a domain. Not because the domain itself matters that mu
 The domain comes first. Everything else follows.
 `;
 
+export const deployFrontendOnAws = `---
+title: Deploy Frontend on AWS
+description: Reverse engineering is not a hacker trick. It is the oldest and most honest way to understand how the world actually works.
+publishDate: 022.Feb.2026
+author: Gaurav Nardia
+ogImage: https://gauravnardia.com/assets/og-images/reverse-engineering.jpg
+keywords: AWS, Deployment
+---
+
+Today I’m writing this because I don’t want to ever Google **“how to deploy frontend on AWS”** again. 
+
+Every time I deploy, I forget one small thing, bucket policy, index.html, CloudFront settings… something always breaks. Then I go down the same rabbit hole.
+
+So this is for my future self. If you’re reading this later: don’t think, just follow.
+
+Overall flow will be **Build -> Upload to S3 -> Connect CloudFront -> Done**
+
+Let's start it step by step.
+
+**Step 1:**
+Build the project by **npm run build** and copy all the files and folder of **dist.**
+
+**Step 2:**
+Create S3 bucket and name it and **Block all public access** while configuring it.
+
+**Step 3:**
+Open S3 bucket, Click Upload and Upload everything inside **dist.** **Not the dist folder, the files/folder inside it**
+
+**Step 4:**
+Go to CloudFront -> Create Distribution and set origin as your bucket and **Default root object = index.html**
+
+**Step 5:**
+Now Fix SPA routing **Go to Error Pages:** select 403 error code and set path **/index.html**
+
+**Step 6:**
+Save everything and cloudfront take 3-5 min to deploy. After deplyment successful, you will url like https://dxxxxx.cloudfront.net . This is the frontend deployed url.
+
+**Step 7:**
+Now add your custom domain. Go to cloudfront settings and add alternate domain. Now add DNS records and generate SSL certificate(ACM) and attach it in CloudFront
+
+**Step 8:**
+Also dont forget to add invalidation in cloudfront -> invalidations and set **Path: /*.** If you skip this then old website shows even after updation.`;
+
 export const designIsTheMoat = `---
 title: Design Is The Moat
 description: Design is no longer a layer you add at the end. It is the product. And it's the moat that will matter most.
@@ -618,6 +661,7 @@ Making choices that require my judgment. Creating things that couldn't exist wit
 export const allMDXContent: Record<string, string> = {
   'building-before-you-feel-ready': buildingBeforeYouFeelReady,
   'buy-a-domain': buyADomain,
+  'deploy-frontend-on-aws': deployFrontendOnAws,
   'design-is-the-moat': designIsTheMoat,
   'growth-without-hacks': growthWithoutHacks,
   'i-built-my-own-analytics-tool': iBuiltMyOwnAnalyticsTool,

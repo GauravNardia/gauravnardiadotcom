@@ -144,6 +144,48 @@ The domain comes first. Everything else follows.
 
 ---
 
+### Deploy Frontend on AWS
+
+URL: https://gauravnardia.com/writing/deploy-frontend-on-aws
+Published: 022.Feb.2026
+Description: Reverse engineering is not a hacker trick. It is the oldest and most honest way to understand how the world actually works.
+
+Today I’m writing this because I don’t want to ever Google **“how to deploy frontend on AWS”** again. 
+
+Every time I deploy, I forget one small thing, bucket policy, index.html, CloudFront settings… something always breaks. Then I go down the same rabbit hole.
+
+So this is for my future self. If you’re reading this later: don’t think, just follow.
+
+Overall flow will be **Build -> Upload to S3 -> Connect CloudFront -> Done**
+
+Let's start it step by step.
+
+**Step 1:**
+Build the project by **npm run build** and copy all the files and folder of **dist.**
+
+**Step 2:**
+Create S3 bucket and name it and **Block all public access** while configuring it.
+
+**Step 3:**
+Open S3 bucket, Click Upload and Upload everything inside **dist.** **Not the dist folder, the files/folder inside it**
+
+**Step 4:**
+Go to CloudFront -> Create Distribution and set origin as your bucket and **Default root object = index.html**
+
+**Step 5:**
+Now Fix SPA routing **Go to Error Pages:** select 403 error code and set path **/index.html**
+
+**Step 6:**
+Save everything and cloudfront take 3-5 min to deploy. After deplyment successful, you will url like https://dxxxxx.cloudfront.net . This is the frontend deployed url.
+
+**Step 7:**
+Now add your custom domain. Go to cloudfront settings and add alternate domain. Now add DNS records and generate SSL certificate(ACM) and attach it in CloudFront
+
+**Step 8:**
+Also dont forget to add invalidation in cloudfront -> invalidations and set **Path: /*.** If you skip this then old website shows even after updation.
+
+---
+
 ### Design Is The Moat
 
 URL: https://gauravnardia.com/writing/design-is-the-moat

@@ -21,29 +21,29 @@ interface Favorite {
 }
 
 const favorites: Favorite[] = [
-    {
+  {
     id: 0,
+    name: "Vercel",
+    description:
+      "Deploy your frontend.",
+    url: "https://vercel.gauravnardia.com",
+    category: "Project",
+  },
+    {
+    id: 1,
     name: "Puffin Analytics",
     description:
       "Simple, privacy-first web analytics built for developers and founders. No cookies. No tracking creepiness. Just fast, reliable insights.",
     url: "https://www.puffinanalytics.com",
-    category: "Product",
+    category: "Project",
   },
   {
-    id: 1,
+    id: 2,
     name: "Trybit",
     description:
       "Real-time developer challenge platform. Built authentication, challenge engine, real-time leaderboard & Razorpay integration. 300+ signups in 30 days.",
     url: "https://trybit.in",
-    category: "Product",
-  },
-  {
-    id: 2,
-    name: "MedipulseX",
-    description:
-      "Doctor-patient appointment booking SaaS. Designed scheduling system, authentication flow, and scalable backend architecture.",
-    url: "https://medipulsex.com",
-    category: "Product",
+    category: "Project",
   },
   {
     id: 3,
@@ -53,24 +53,16 @@ const favorites: Favorite[] = [
     url: "https://github.com/GauravNardia/tcp-protocol",
     category: "Project",
   },
+  // {
+  //   id: 4,
+  //   name: "AI App Builder",
+  //   description:
+  //     "Prompt-based web app builder using OpenAI. Built dynamic generation logic and structured output handling.",
+  //   url: "https://builder-flax-six.vercel.app",
+  //   category: "Project",
+  // },
   {
     id: 4,
-    name: "AI App Builder",
-    description:
-      "Prompt-based web app builder using OpenAI. Built dynamic generation logic and structured output handling.",
-    url: "https://builder-flax-six.vercel.app",
-    category: "Project",
-  },
-  {
-    id: 5,
-    name: "UI Component Library",
-    description:
-      "Reusable modern UI library built with Next.js, TypeScript & Framer Motion.",
-    url: "https://shirionui.vercel.app",
-    category: "Project",
-  },
-  {
-    id: 6,
     name: "Multiplayer Chess",
     description:
       "Real-time multiplayer chess app using WebSockets. Live board sync, move validation & room-based architecture.",

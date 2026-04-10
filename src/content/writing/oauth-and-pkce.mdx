@@ -40,5 +40,5 @@ It redirects to a consent popup with the appended client ID, code challenge, and
 
 Now, the client sends a request to the Google backend with the original code and the code that Google gave the client after clicking the Approve button. The Google backend decrypts the encrypted code that is stored in their backend, and if it matches the original code, it gives the access token.
 
-That's how PKCE works, and that's how your client application is secured by PKCE. 
+That's how PKCE works, and that's how your client application is secured by PKCE(Proof key for code exchange ). 
 

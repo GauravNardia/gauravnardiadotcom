@@ -6,6 +6,11 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    id: 'oauth-and-pkce',
+    title: 'OAuth and PKCE',
+    date: '10.Apr.2026'
+  },
+  {
     id: 'deploy-frontend-on-aws',
     title: 'Deploy Frontend on AWS',
     date: '20.Mar.2026'

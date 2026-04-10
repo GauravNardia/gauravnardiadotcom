@@ -128,10 +128,10 @@ The domain comes first. Everything else follows.
 
 export const deployFrontendOnAws = `---
 title: Deploy Frontend on AWS
-description: Reverse engineering is not a hacker trick. It is the oldest and most honest way to understand how the world actually works.
-publishDate: 022.Feb.2026
+description: Step by step frontend deployment on AWS
 author: Gaurav Nardia
-ogImage: https://gauravnardia.com/assets/og-images/reverse-engineering.jpg
+publishDate: 20.Mar.2026
+ogImage: https://gauravnardia.com/assets/og-images/deploy-frontend-on-aws.jpg
 keywords: AWS, Deployment
 ---
 
@@ -392,6 +392,43 @@ In the end, the best projects come from a place of genuine need and personal exp
 Lastly - Here's Jack Dorsey on why building something for yourself can be better than trying to solve a problem.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tA6MB1y1DDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`;
+
+export const oauthAndPkce = `---
+title: OAuth & PKCE
+description: OAuth & PKCE Explained
+author: Gaurav Nardia
+publishDate: 10.Apr.2026
+ogImage: https://gauravnardia.com/assets/og-images/oauth.jpg
+keywords: Oauth, PKCE
+---
+
+In this article, I will write about OAuth and PKCE. What are these, and how these works? We will talk about them in detail.
+
+OAuth basically is your application can use the third-party identity provider to log in. For example, we have seen on a lot of websites a button called "Sign in with Google", "Sign in with Microsoft", "Sign in with Apple" etc. These buttons are the protocols of OAuth.
+
+But now you will think, why we need OAuth when we can use just email and password. The problem is that for email & password, we have to remember our email and password every time when we log in into apps with different IDs, And for email and password, we have to write the whole authentication system from scratch, and we have to handle a lot of security features.
+
+But by Oauth, we don't need to remember our multiple passwords, and we don't have to worry about the security. Let's say, if we are doing sign in with Google, Google will handle it with security itself. You don't need to worry about the security. That's where OAuth comes into the picture. You just click the "Sign in with Google" button and you can just log in. 
+
+Now, how does the OAuth flow work? Let's say we are doing sign in with Google. 
+1. Go to [Google Console](https://console.cloud.google.com).
+2. Register your app.
+3. You will get client ID and secret after your app registration. 
+4. Now integrate "sign in with Google" in your app by client ID and secret. 
+
+Now let's talk about the flow when a user clicks the "Sign in with Google" button. It redirects to the accounts.google.com consent popup, appended with the client ID and redirect URI. When the user clicks the "Approve" button on the Google popup, it redirects back to the app with the code, which is a temporary, short-lived code. That short-lived code interacts with Google's backend. Our app's backend sends the code, Google Client ID, and secret together to Google's backend. Google backend verifies it, and if it's successful, it gives you an access token. You store it on your server and can access the user's information. 
+
+You can see it in the diagram. 
+![Oauth](/assets/oauth.png)
+
+The problem happens with the client secret. We have to secure that because anyone can attack it and access our information. In this scenario, in the website application, the access token is stored on our server, so it is secured right now.
+
+But when the app doesn't have a backend and it just has Google login, it is necessary to secure the client secret. What is the flow here? When our application doesn't have the backend:
+1. When we click the Google button, it redirects to the consent form with the client ID and redirect URI and sends back the code.
+2. If our application doesn't have the backend, we will store it in the client, but anyone can attack our client and get this code.
+
+This is the exact problem that PKCE solves. 
 `;
 
 export const rateLimiting = `---
@@ -666,6 +703,7 @@ export const allMDXContent: Record<string, string> = {
   'growth-without-hacks': growthWithoutHacks,
   'i-built-my-own-analytics-tool': iBuiltMyOwnAnalyticsTool,
   'make-something-you-want': makeSomethingYouWant,
+  'oauth-and-pkce': oauthAndPkce,
   'rate-limiting': rateLimiting,
   'reverse-engineering': reverseEngineering,
   'stop-fictional-case-studies': stopFictionalCaseStudies,

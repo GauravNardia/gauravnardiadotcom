@@ -428,7 +428,16 @@ But when the app doesn't have a backend and it just has Google login, it is nece
 1. When we click the Google button, it redirects to the consent form with the client ID and redirect URI and sends back the code.
 2. If our application doesn't have the backend, we will store it in the client, but anyone can attack our client and get this code.
 
-This is the exact problem that PKCE solves. 
+This is the exact problem that PKCE (proof key for code exchange) solves. 
+
+In PKCE, when the user clicks the "Sign in with Google" button, it generates a new random code every time. The random code will be different for every click, and it encrypts it and makes it a code challenge. Let's say we encrypt it via SHAA256. It generates two codes: Original code and code challenge.
+
+It redirects to a consent popup with the appended client ID, code challenge, and encryption algorithm. And when a user clicks the Approve button on the consent screen, then Google backend stores the code challenge, encryption algorithm, and original code. And give the client a code. 
+
+Now, the client sends a request to the Google backend with the original code and the code that Google gave the client after clicking the Approve button. The Google backend decrypts the encrypted code that is stored in their backend, and if it matches the original code, it gives the access token.
+
+That's how PKCE works, and that's how your client application is secured by PKCE. 
+
 `;
 
 export const rateLimiting = `---

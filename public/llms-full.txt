@@ -525,6 +525,40 @@ This helps reduce the burst issue at the boundaries and gives a more balanced li
 
 ---
 
+### Real-Time Systems — Quick Notes
+
+URL: https://gauravnardia.com/writing/real-time-systems
+Published: 11.Apr.2026
+Description: The first thing you should do when starting a project is buy a domain. Not set up your tech stack. Not design your logo. Buy a domain. Here's why.
+
+Real-time systems let your app update without refreshing. Instead of asking again and again, the client and server stay in sync in smarter ways.
+
+3 core patterns of real-time systems:
+ - Polling
+ - Server-Sent Events (SSE)
+ - WebSockets
+
+
+**Polling:**
+The client repeatedly asks the server “Any updates?” If the server has any kind of update, it will send it to that client. 
+
+There are two types of polling:
+1. Short polling
+2. Long polling
+
+In short polling client asks server at a fixed interval of time for updates, and server responds immediately, even if there is no data or update available. For example client sends a request to the server every 3 seconds, and the server responds immediately. It are very simple. The cons of short polling is wasteful request because if server has no data, it will respond as empty.
+
+On the other hand, in long polling, the client sends a request to the server, and the server holds that request for a specific time until the data is available. Once the data is available, the server sends back the response to the client, and the client immediately sends the next request. The cons is the client has to start the new request every time.
+
+**Server-Sent Events (SSE):**
+In SSE the client sends the request to the server, the server keeps it open, and whenever the data is available, it just sends it to the client on the same request. in this only server can send data but client can't. This is one way. 
+
+
+**WebSockets:**
+It is a persistent two-way connection between client and server. It starts as an HTTP request, Make the connection, and it becomes open. As client and server both can send messages any time. But the cons is it is harder to scale.
+
+---
+
 ### Reverse Engineering
 
 URL: https://gauravnardia.com/writing/reverse-engineering

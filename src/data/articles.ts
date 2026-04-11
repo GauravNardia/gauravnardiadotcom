@@ -5,6 +5,11 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+    {
+    id: 'real-time-systems',
+    title: 'Real Time Systems - Quick Notes',
+    date: '11.Apr.2026'
+  },
   {
     id: 'oauth-and-pkce',
     title: 'OAuth and PKCE',

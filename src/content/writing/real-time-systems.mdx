@@ -22,7 +22,7 @@ There are two types of polling:
 1. Short polling
 2. Long polling
 
-In short polling client asks server at a fixed interval of time for updates, and server responds immediately, even if there is no data or update available. For example client sends a request to the server every 3 seconds, and the server responds immediately. It are very simple. The cons of short polling is wasteful request because if server has no data, it will respond as empty.
+In short polling client asks server at a fixed interval of time for updates, and server responds immediately, even if there is no data or update available. For example client sends a request to the server every 3 seconds, and the server responds immediately. It is very simple. The cons of short polling is wasteful request because if server has no data, it will respond as empty.
 
 On the other hand, in long polling, the client sends a request to the server, and the server holds that request for a specific time until the data is available. Once the data is available, the server sends back the response to the client, and the client immediately sends the next request. The cons is the client has to start the new request every time.
 

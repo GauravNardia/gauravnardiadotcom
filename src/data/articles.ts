@@ -5,7 +5,12 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-    {
+  {
+    id: 'docker-for-developers',
+    title: 'Docker for Developers',
+    date: '13.Apr.2026'
+  },
+  {
     id: 'real-time-systems',
     title: 'Real Time Systems - Quick Notes',
     date: '11.Apr.2026'

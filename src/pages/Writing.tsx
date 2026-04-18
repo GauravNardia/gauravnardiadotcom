@@ -70,7 +70,7 @@ export function Writing() {
             <Header activePage="writing" />
           </div>
           <p className="leading-[1.4] not-italic relative shrink-0 text-[var(--foreground)] text-lg text-justify w-full animate-in animate-delay-1">
-          I write about tech, products, startups, and the lessons I pick up along the way. Sometimes it's code. Sometimes it's product thinking. Sometimes it's just something I observed about builders, growth, or life. These posts are snapshots of what I'm learning in real time.
+          I write about what I actually build and break. You'll find deep dives on Docker internals, OAuth flows, AWS deployments, system design patterns, and the real-world lessons that never make it into tutorials. These aren't summaries — they're field notes from someone in the trenches.
           </p>
           <div className="animate-in animate-delay-2 w-full">
             <ArticleList />

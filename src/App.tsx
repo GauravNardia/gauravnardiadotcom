@@ -12,7 +12,7 @@ export default function App() {
 	return (
 		<Router>
 			<Helmet>
-				<title>Gaurav Nardia aka @gaurav_nardia</title>
+				<title>Gaurav Nardia</title>
 				<meta
 					name='description'
 					content='Full Stack Developer. Building cool stuffs with code.'
@@ -59,7 +59,7 @@ export default function App() {
 								"@type": "Person",
 								"@id": "https://gauravnardia.com/#person",
 								name: "Gaurav Nardia",
-								alternateName: "@gaurav_nardia",
+								alternateName: "@gaurav",
 								url: "https://gauravnardia.com",
 								image: "https://gauravnardia.com/profile.jpeg",
 								jobTitle: "Full Stack Developer",

@@ -29,8 +29,8 @@ export function Header({ activePage }: HeaderProps = {}) {
       <Link to="/" className="content-stretch flex gap-1 h-[25px] items-center justify-start relative shrink-0 w-full hover:opacity-70 transition-opacity" aria-label="Gaurav Nardia home">
         <p className="font-medium leading-[1.4] not-italic relative shrink-0 text-[var(--foreground)] text-xl text-justify text-nowrap whitespace-pre">
           <span className="font-medium">Gaurav Nardia </span>
-          <span className="font-normal italic">aka</span>
-          <span className="font-medium"> @gaurav_nardia</span>
+          {/* <span className="font-normal italic">aka</span>
+          <span className="font-medium"> @gaurav_nardia</span> */}
         </p>
       </Link> 
 

@@ -50,8 +50,7 @@ export function Home() {
                 <div className='font-normal min-w-full relative shrink-0 text-[var(--foreground)] text-lg text-justify flex flex-col gap-4'>
                	<p className='leading-[1.4] relative animate-in animate-delay-1'>
 	            <span>
-			        Hey, I'm Gaurav 👋 — a self-taught full stack developer and builder on the internet.
-			        I build products, break them, and build again.
+			        Hey, I'm Gaurav 👋 a self-taught full stack developer who builds things that actually ship. I don't just write code; I architect systems, debug production incidents, and iterate until it works. I've gone from zero to production across SaaS platforms, real-time applications, and open-source tools, solo and in teams.
 		        </span>
                	</p>
 
@@ -59,6 +58,14 @@ export function Home() {
 		         <span>
 			         I've worked on products like{" "}
 		         </span>
+				 	<a
+			         href='https://vercel.gauravnardia.com'
+			         target='_blank'
+			         rel='noopener noreferrer'
+			         className='underline underline-offset-4 hover:opacity-80 transition'>
+			         Vercel
+		         </a>
+				 <span>,{" "}</span>
 				 	<a
 			         href='https://puffinanalytics.com'
 			         target='_blank'
@@ -77,13 +84,13 @@ export function Home() {
 	           	<span>{" "}and MedipulseX, and contributed to open-source projects while shipping real-world systems.</span>
 	             </p>
 
-	             <p className='leading-[1.4] animate-in animate-delay-3'>
+	             {/* <p className='leading-[1.4] animate-in animate-delay-3'>
 		         <span>
 			         I've worked as a Full Stack Engineer at Peerlist.
 			         I'm deeply interested in technology, systems, science,
 			         and honest work. I believe progress comes from shipping — not talking.
 		         </span>
-	             </p>
+	             </p> */}
 
             	<p className='leading-[1.4] animate-in animate-delay-4'>
 		<span>

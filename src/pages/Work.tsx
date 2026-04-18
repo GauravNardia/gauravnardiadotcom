@@ -25,7 +25,7 @@ const favorites: Favorite[] = [
     id: 0,
     name: "Vercel",
     description:
-      "Deploy your frontend.",
+      "Deploy your apps in seconds.",
     url: "https://vercel.gauravnardia.com",
     category: "Project",
   },
@@ -214,7 +214,10 @@ function ProjectItem({ favorite }: { favorite: Favorite }) {
     }
   };
 
-  const getFaviconUrl = (url: string) => {
+  const getFaviconUrl = (url: string, name: string) => {
+      if (name.toLowerCase().includes("vercel")) {
+    return "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png";
+  }
     try {
       const domain = new URL(url).hostname;
       return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
@@ -248,7 +251,7 @@ function ProjectItem({ favorite }: { favorite: Favorite }) {
           {/* Favicon */}
           <div className="mt-1 shrink-0">
             <img
-              src={getFaviconUrl(favorite.url)}
+              src={getFaviconUrl(favorite.url, favorite.name)}
               className="size-6 rounded-md"
               alt="favicon"
             />
@@ -310,7 +313,7 @@ export function Work() {
           <Header activePage='work' />
 
           <p className='text-lg leading-relaxed animate-in'>
-          Projects I've built and shipped across SaaS, system design, and real-time applications. Each one represents a problem I wanted to solve and a skill I wanted to master.
+            Each project here started with a problem I couldn't ignore. From Puffin Analytics (privacy-first web analytics, no cookies) to Trybit (a real-time dev challenge platform with 300+ signups in 30 days) to Vercel deployments that go live in seconds — these are systems I designed, deployed, and own end-to-end — infrastructure, auth, payments, and all.
           </p>
 
           <div>

@@ -22,7 +22,15 @@ interface Favorite {
 
 const favorites: Favorite[] = [
   {
-    id: 0,
+    id: 1,
+    name: "Better Vercel",
+    description:
+      "Vercel alternative that lets developers deploy applications on managed infrastructure or directly into their own AWS account. Built with automated deployments, custom domains, SSL, logs, and BYOC.",
+    url: "https://better-vercel.com",
+    category: "Project",
+  },
+  {
+    id: 1,
     name: "Vercel",
     description:
       "Deploy your apps in seconds.",
@@ -30,7 +38,7 @@ const favorites: Favorite[] = [
     category: "Project",
   },
     {
-    id: 1,
+    id: 2,
     name: "Puffin Analytics",
     description:
       "Simple, privacy-first web analytics built for developers and founders. No cookies. No tracking creepiness. Just fast, reliable insights.",
@@ -38,7 +46,7 @@ const favorites: Favorite[] = [
     category: "Project",
   },
   {
-    id: 2,
+    id: 3,
     name: "Trybit",
     description:
       "Real-time developer challenge platform. Built authentication, challenge engine, real-time leaderboard & Razorpay integration. 300+ signups in 30 days.",
@@ -46,7 +54,7 @@ const favorites: Favorite[] = [
     category: "Project",
   },
   {
-    id: 3,
+    id: 4,
     name: "HTTP Protocol Project",
     description:
       "Built simplified HTTPS protocol from scratch. Implemented TCP handshake, encrypted data exchange & certificate validation.",
@@ -62,7 +70,7 @@ const favorites: Favorite[] = [
   //   category: "Project",
   // },
   {
-    id: 4,
+    id: 5,
     name: "Multiplayer Chess",
     description:
       "Real-time multiplayer chess app using WebSockets. Live board sync, move validation & room-based architecture.",
@@ -215,9 +223,12 @@ function ProjectItem({ favorite }: { favorite: Favorite }) {
   };
 
   const getFaviconUrl = (url: string, name: string) => {
-      if (name.toLowerCase().includes("vercel")) {
-    return "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png";
-  }
+    if (name.toLowerCase().includes("vercel") && !name.toLowerCase().includes("better")) {
+      return "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png";
+    }
+    if (name === "Better Vercel") {
+      return "/assets/light-logo.svg"; // put your image in the /public folder
+    }
     try {
       const domain = new URL(url).hostname;
       return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;

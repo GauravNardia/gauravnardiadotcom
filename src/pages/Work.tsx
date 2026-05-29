@@ -227,7 +227,7 @@ function ProjectItem({ favorite }: { favorite: Favorite }) {
       return "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png";
     }
     if (name === "Better Vercel") {
-      return "/assets/light-logo.svg"; // put your image in the /public folder
+      return "/assets/dark-logo.svg"; // put your image in the /public folder
     }
     try {
       const domain = new URL(url).hostname;
@@ -263,7 +263,7 @@ function ProjectItem({ favorite }: { favorite: Favorite }) {
           <div className="mt-1 shrink-0">
             <img
               src={getFaviconUrl(favorite.url, favorite.name)}
-              className="size-6 rounded-md"
+              className={`size-6 rounded-md ${favorite.name === "Better Vercel" ? "invert dark:invert-0" : ""}`}
               alt="favicon"
             />
           </div>

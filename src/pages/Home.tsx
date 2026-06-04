@@ -59,11 +59,11 @@ export function Home() {
 			         I've worked on products like{" "}
 		         </span>
 				 	<a
-			         href='https://vercel.gauravnardia.com'
+			         href='https://better-vercel.com'
 			         target='_blank'
 			         rel='noopener noreferrer'
 			         className='underline underline-offset-4 hover:opacity-80 transition'>
-			         Vercel
+			         Better Vercel
 		         </a>
 				 <span>,{" "}</span>
 				 	<a

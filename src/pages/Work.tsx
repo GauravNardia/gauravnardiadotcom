@@ -42,7 +42,7 @@ const favorites: Favorite[] = [
     name: "Puffin Analytics",
     description:
       "Simple, privacy-first web analytics built for developers and founders. No cookies. No tracking creepiness. Just fast, reliable insights.",
-    url: "https://www.puffinanalytics.com",
+    url: "https://puffinanalytics.com",
     category: "Project",
   },
   {
